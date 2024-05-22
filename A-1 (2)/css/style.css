@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    text-decoration: none;
+    list-style: none;
+}
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo > a {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/* menu */
+.menu {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 1;
+}
+.main-menu ul {
+    display: flex;
+}
+.main-menu ul li a {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sub-menu {
+    display: none;
+}
+.sub-menu ul {
+    display: flex;
+}
+.sub-menu ul li ul {
+    display: block;
+}
+.sub-menu ul li ul li a {
+    width: 200px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-menu ul li ul li a:hover {
+    background-color: black;
+    font-weight: bold;
+}
+
+.slide {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+}
+
+.s1 {background-color: darkcyan;}
+.s2 {background-color: slateblue;}
+.s3 {background-color: firebrick;}
+
+#cont {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.board {
+    width: 33%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+.tab {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.notice-tab {
+    width: 50%;
+    height: 100%;
+    background-color: #666;
+}
+.notice-tab a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.gallery-tab {
+    width: 50%;
+    height: 100%;
+}
+.gallery-tab a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    width: 34%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+
+.links {
+    width: 33%;
+    height: 100%;
+}

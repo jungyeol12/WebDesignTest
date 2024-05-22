@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+    box-sizing: border-box;
+}
+
+#wrap {
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+header {
+    width: 1340px;
+    height: 100px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+    height: 100%;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo a {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.menu {
+    width: 800px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu > ul > li > a {
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+.menu > ul > li:hover > a {
+    background-color: whitesmoke;
+}
+.menu ul li ul li a {
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+.menu ul li ul li:hover a {
+    background-color: wheat;
+}
+
+.menu ul li {
+    display: inline-block;
+    width: 25%;
+}
+
+.menu ul li ul {
+    display: none;
+}
+
+.menu ul li ul li {
+    border: 1px solid #000;
+    background-color: ivory;
+    width: 100%;
+    height: 40px;
+}
+
+.slide {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #000;
+    z-index: -1;
+    overflow: hidden;
+    position: relative;
+}
+.slide-wrap {
+    width: 400%;
+    height: 100%;
+}
+.slider {
+    width: 100%;
+    border: 1px solid #000;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.slider:first-child {
+    opacity: 1;
+}
+.s1 {
+    background-color: plum;
+}
+.s2 {
+    background-color: khaki;
+}
+.s3 {
+    background-color: lightskyblue;
+}
+
+#cont {
+    margin-top: -100px;
+    width: 1340px;
+    height: 700px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+.under-wrap {
+    position: relative;
+    top: -100px;
+    margin: 0 auto;
+}
+
+.links {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: aliceblue;
+}
+.links ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.links ul li {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links ul li a {
+    display: flex;
+}
+.links ul li a span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+.links ul li .link {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.link1 {background-color: red;}
+.link2 {background-color: blue;}
+.link3 {background-color: green;}
+.link4 {background-color: purple;}
+.link5 {background-color: olive;}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+    display: flex;
+    position: relative;
+}
+.bn-img {
+    width: 30%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: saddlebrown;
+}
+.text-box {
+    padding: 30px;
+}
+.title-text {
+    font-weight: bold;
+    padding: 0 0 5px;
+}
+.next {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    padding: 20px;
+    background-color: lavender;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.board {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #000;
+    display: flex;
+
+}
+
+.tab {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #000;
+}
+.tab:hover {
+    background-color: whitesmoke;
+}
+.tab p {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.notice {
+    width: 50%;
+    height: 100%;
+    border: 1px solid #000;
+    position: relative;
+}
+.notice ul li {
+    display: flex;
+    padding: 30px;
+    border-bottom: 1px solid #000;
+}
+.notice ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.notice ul li span {
+    position: absolute;
+    right: 30px;
+}
+
+.gallery {
+    width: 50%;
+    height: 100%;   
+    border: 1px solid #000;
+}
+.gallery ul {
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+}
+.gallery ul li {
+    width: 33%;
+    text-align: center;
+}
+.gallery-box {
+    margin-top: 80px;
+}
+.gallery-img {
+    margin: 0 auto;
+    width: 180px;
+    height: 130px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.gallery ul li span {
+    font-weight: bold;
+}
+footer {
+    width: 1340px;
+    margin: 0 auto;
+    height: 120px;
+    border: 1px solid #000;
+    display: flex;
+}
+
+.copy {
+    width: calc(100% - 200px);
+    height: 100%;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-div {
+    width: 200px;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.sns {
+    width: 100%;
+    height: 50%;
+    border: 1px solid #000;
+}
+.sns ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.sns ul li {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+}
+.sns ul li:last-child {
+    width: 35%;
+}
+.sns ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.facebook {
+    background-color: blue;
+}
+.twitter {
+    background-color: black;
+}
+.instagram {
+    background-color: purple;
+}
+
+
+.site {
+    width: 100%;
+    height: 50%;
+    border: 1px solid #000;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 2;
+    display: none;
+}
+
+.box {
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    transform: translateY(40%);
+}
+
+.title {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.text {
+    padding: 10px;
+}
+
+.popup-close {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}

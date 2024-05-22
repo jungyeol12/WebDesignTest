@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+
+#wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 800px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+header {
+    width: 200px;
+    height: calc(100% - 100px);
+    border: 1px solid #000;
+}
+
+.logo {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo a {
+    font-weight: bold;
+    font-size: 26px;
+}
+.menu > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: olive;
+    color: white;
+    text-align: center;
+    border: 1px solid #000;
+}
+.menu > ul > li:hover > a {
+    background-color: olivedrab;
+    font-weight: bold;
+}
+.menu > ul > li > ul {
+    display: none;
+}
+.menu > ul > li > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #000;
+    background-color: greenyellow;
+}
+.menu > ul > li > ul > li:hover > a {
+    background-color: green;
+    font-weight: bold;
+    color: white;
+}
+
+
+#cont {
+    width: 400px;
+    height: calc(100% - 100px);
+    border: 1px solid #000;
+}
+
+.notice {
+    width: 100%;
+    height: 274px;
+    border: 1px solid #000;
+}
+.tab {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid #000;
+}
+.notice > ul > li {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.notice > ul > li > p,span {
+    padding: 0 30px;
+}
+.gallery {
+    width: 100%;
+    height: 274px;
+    border: 1px solid #000;
+}
+.gallery ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 49px);
+}
+.gallery ul li {
+    padding: 10px 30px;
+}
+.gallery ul li img {
+    width: 120px;
+    height: 120px;
+    margin-left: 10px;
+}
+.gallery ul li p {
+
+    text-align: center;
+}
+.links {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #000;
+}
+.links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links ul li {
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.slide {
+    width: calc(100% - 200px - 400px);
+    height: calc(100% - 100px);
+    border: 1px solid #000;
+    overflow: hidden;
+}
+.slide-wrap {
+    width: 100%;
+    height: 400%;
+    display: block;
+    position: relative;
+    animation: 3s slide infinite;
+}
+.slider {
+    height: 698px;
+    border: 1px solid #000;
+}
+.s1 {
+    background-image: url(../images/slider01.jpg);
+}
+.s2 {
+    background-image: url(../images/slider02.jpg);
+}
+.s3 {
+    background-image: url(../images/slider03.jpg);
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #000;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.flogo {
+    width: 200px;
+    height: 100%;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flogo a {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.copy {
+    width: calc(100% - 200px - 249px);
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copy p {
+    font-size: 20px;
+}
+.sns {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    border: 1px solid #000;
+}

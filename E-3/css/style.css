@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+
+#wrap {
+    width: 100%;
+    height: 800px;
+    border: 1px solid #000;
+    background-color: ivory;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 200px;
+    height: 700px;
+    border: 1px solid #000;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 26px;
+}
+.menu {
+    
+}
+.menu > ul > li > a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+.menu > ul > li > ul > li {
+    border: 1px solid #000;
+}
+
+#cont {
+    width: 400px;
+    height: 700px;
+    border: 1px solid #000;
+}
+
+.banner {
+    width: 100%;
+    height: 140px;
+    border: 1px solid #000;
+}
+
+.notice {
+    width: 100%;
+    height: 260px;
+    border: 1px solid #000;
+}
+
+.gallery {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000;
+}
+
+.slide {
+    width: calc(100% - 200px - 400px);
+    height: 700px;
+    border: 1px solid #000;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: silver;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.flogo {
+    width: 200px;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.copy {
+    width: calc(100% - 200px - 300px);
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.sns {
+    width: 300px;
+    height: 100%;
+    border: 1px solid #000;
+    position: absolute;
+    right: 0;
+}
