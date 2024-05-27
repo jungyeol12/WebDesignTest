@@ -42,3 +42,11 @@ $(".tab ul li:last-child").click(
         $(".notice").hide();
     }
 );
+
+
+$(".popup-open").on("click", function() {
+    $("#popup").css("display", "flex");
+});
+$(".popup-close").on("click", function() {
+    $("#popup").css("display", "none");
+});
