@@ -29,3 +29,23 @@ $(".popup-open").on("click", function() {
 $(".popup-close").on("click", function() {
     $("#popup").css("display", "none");
 });
+
+$(".tab ul li:first-child").click(
+    function() {
+        $(this).addClass('on');
+        $(".tab ul li:last-child").removeClass('on');
+
+        $(".notice").show();
+        $(".gallery").hide();
+    }
+)
+
+$(".tab ul li:last-child").click(
+    function() {
+        $(this).addClass('on');
+        $(".tab ul li:first-child").removeClass('on');
+
+        $(".notice").hide();
+        $(".gallery").show();
+    }
+)
