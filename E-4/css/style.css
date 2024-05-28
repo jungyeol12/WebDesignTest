@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+    box-sizing: border-box;
+}
+
+#wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+header {
+    width: 200px;
+    height: calc(100%-120px);
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu > ul > li {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background-color: #333;
+}
+.menu > ul > li > a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+.menu > ul > li > ul {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    left: 100%;
+    display: none;
+    z-index: 1;
+}
+
+.menu > ul > li > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color:aliceblue;
+}
+
+#cont {
+    width: 400px;
+    height: calc(100%-120px);
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    position: relative;
+    background-color:brown;
+    align-items: center;
+    justify-content: center;
+}
+
+.bn-img {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.bn-txt h3, p {
+    color: white;
+}
+
+.arrow {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+}
+
+.news {
+    width: 100%;
+    height: 200px;
+}
+
+.news ul li {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.news ul li span {
+    margin-left: 150px;
+}
+
+.tab {
+    padding: 15px;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.gallery {
+    width: 100%;
+    height: 200px;
+}
+
+.gallery ul {
+    display: flex;
+}
+
+.gallery ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery-img {
+    width: 180px;
+    height: 100px;
+    background-color:aquamarine;
+}
+
+.links {
+    width: 100%;
+    height: 200px;
+}
+
+.links ul {
+    display: flex;
+}
+
+.links ul li {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    background-color: indigo;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    margin-left: 15px;
+    margin-top: 60px;
+}
+
+.links ul li a {
+    color: white;
+}
+
+.slide {
+    width: calc(100% - 600px);
+    height: calc(100%-120px);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.slide > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.slide > div:first-child {
+    left: 0;
+}
+
+.s1 {background-color: blue;}
+.s2 {background-color: red;}
+.s3 {background-color: green;}
+
+footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    background-color: #666;
+}
+
+.flogo {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flogo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.foot-wrap {
+    width: calc(100% - 450px);
+    height: 100%;
+}
+
+.foot-menu {
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.copy {
+    width: 100%;
+    height: 50%;
+    margin-left: 20px;
+}
+
+.family {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.family select {
+    width: 150px;
+    height: 30px;
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+
+.box {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    left: calc(50% - 200px);
+    top: calc(50% - 300px);
+}
+
+.title {
+    padding: 30px;
+}
+
+.txt {
+    padding: 30px;
+    margin-top: -30px;
+}
+
+button {
+    width: 100px;
+    height: 30px;  
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    bottom: 30px;
+}
