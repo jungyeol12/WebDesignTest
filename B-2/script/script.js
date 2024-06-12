@@ -28,12 +28,12 @@ function autoslide() {
 
 $(".openPop").click(
     function() {
-        $(".openPop").show();
+        $("#popup").show();
     }
 )
 
 $(".closePop").click(
     function() {
-        $(".openPop").hide();
+        $("#popup").hide();
     }
 )
