@@ -1,27 +1,29 @@
-$(".menu ul li").hover(
+$(".menu").hover(
     function() {
-        $(".menu ul li ul").stop().slideDown("slow");
+        $(".sub-menu").stop().slideDown("slow");
     },
     function() {
-        $(".menu ul li ul").stop().slideUp("fast");
+        $(".sub-menu").stop().slideUp("fast");
     }
 )
 
-let currentIndex = 0;
-$(".slide-wrap").append($(".slider").first().clone(true));
+var slide = $(".slide img");
+var index = 0;
+var size = slide.length - 1;
+var timer = setInterval("autoslide()", 2000);
 
-setInterval(() => {
-    currentIndex++;
-    $(".slide-wrap").animate({marginTop: -25.2 * currentIndex + "%"}, 600);
-
-    if(currentIndex == 3)
-    {
-        setTimeout(() => {
-            $(".slide-wrap").animate({marginTop: 0}, 0)
-            currentIndex = 0;
-        }, 700);
-    }
-}, 3000);
+function autoslide() {
+    $(slide[index]).stop().animate({
+        top: "-100%"
+    }, 1000, function() {
+        $(this).css({top: "100%"});
+    });
+    index++;
+    if(index > size) index = 0;
+    $(slide[index]).stop().animate({
+        top: "0"
+    }, 1000);
+}
 
 $(".popup-open").on("click", function() {
     $("#popup").css("display", "flex");
@@ -32,8 +34,8 @@ $(".popup-close").on("click", function() {
 
 $(".tab ul li:first-child").click(
     function() {
-        $(this).addClass('on');
-        $(".tab ul li:last-child").removeClass('on');
+        $(this).addClass("on");
+        $(".tab ul li:last-child").removeClass("on");
 
         $(".notice").show();
         $(".gallery").hide();
@@ -42,8 +44,8 @@ $(".tab ul li:first-child").click(
 
 $(".tab ul li:last-child").click(
     function() {
-        $(this).addClass('on');
-        $(".tab ul li:first-child").removeClass('on');
+        $(this).addClass("on");
+        $(".tab ul li:first-child").removeClass("on");
 
         $(".notice").hide();
         $(".gallery").show();
